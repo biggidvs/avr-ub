@@ -20,7 +20,7 @@
   Project:       AVR 通用 Bootloader
   File:          bootldr.c
                  主程序
-  Version:       4.0
+  Version:       4.1
 
   Compiler:      WinAVR 20071221 + AVR Studio 4.14.589
 
@@ -29,7 +29,7 @@
                  http://avrubd.googlepages.com
                  http://sourceforge.net/projects/avrub
 
-  Date:          2008.4
+  Date:          2008.5
 
   查看 readme.htm 获得更多相关内容.
 
@@ -211,6 +211,9 @@ int main(void)
   wdt_enable(WDTO_1S);
 #else
   //禁止看门狗
+#ifndef MCUSR
+#define MCUSR    MCUCSR
+#endif
   MCUSR = 0;
   wdt_disable();
 #endif

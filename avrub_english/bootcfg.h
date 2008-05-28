@@ -20,7 +20,7 @@
   Project:       AVR Universal BootLoader
   File:          bootcfg.h
                  user's configuration.
-  Version:       4.0
+  Version:       4.1
 
   Compiler:      WinAVR 20071221 + AVR Studio 4.14.589
 
@@ -29,7 +29,7 @@
                  http://avrubd.googlepages.com
                  http://sourceforge.net/projects/avrub
                  
-  Date:          2008.4
+  Date:          2008.5
 
   See readme.htm to get more information.
 
@@ -47,7 +47,7 @@
 #endif
 
 //baudrate
-#define BAUDRATE           9600
+#define BAUDRATE           9600UL
 
 //Boot section start address(byte)
 //define BootStart to 0 will disable this function
@@ -77,11 +77,11 @@
 #define TimeOutCntC        50
 
 //password length
-#define CONNECTCNT         8
+#define CONNECTCNT         5
 
 //password
 #if (LEVELMODE == 0)
-unsigned char ConnectKey[] = {0x45, 0x4E, 0x46, 0x49, 0x54, 0x4B, 0x56, 0x32};
+unsigned char ConnectKey[] = {0x41, 0x56, 0x52, 0x55, 0x42};
 #endif
 
 //comport number: 0/1/2..
