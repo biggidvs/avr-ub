@@ -20,7 +20,7 @@
   Project:       AVR Universal BootLoader
   File:          bootldr.h
                  necessary macro declare
-  Version:       4.0
+  Version:       4.1
 
   Compiler:      WinAVR 20071221 + AVR Studio 4.14.589
 
@@ -29,7 +29,7 @@
                  http://avrubd.googlepages.com
                  http://sourceforge.net/projects/avrub
 
-  Date:          2008.4
+  Date:          2008.5
 
   See readme.htm to get more information.
 

@@ -20,7 +20,7 @@
   Project:       AVR 通用 BootLoader
   File:          bootcfg.h
                  用户配置参数，请根据你系统的实际情况进行设置
-  Version:       4.0
+  Version:       4.1
 
   Compiler:      WinAVR 20071221 + AVR Studio 4.14.589
 
@@ -29,7 +29,7 @@
                  http://avrubd.googlepages.com
                  http://sourceforge.net/projects/avrub
                  
-  Date:          2008.4
+  Date:          2008.5
 
   See readme.htm to get more information.
 
@@ -77,11 +77,11 @@
 #define TimeOutCntC        50
 
 //同步密码长度
-#define CONNECTCNT         8
+#define CONNECTCNT         5
 
 //同步密码
 #if (LEVELMODE == 0)
-unsigned char ConnectKey[] = {0x45, 0x4E, 0x46, 0x49, 0x54, 0x4B, 0x56, 0x32};
+unsigned char ConnectKey[] = {0x41, 0x56, 0x52, 0x55, 0x42};
 #endif
 
 //串口号: 0/1/2..
